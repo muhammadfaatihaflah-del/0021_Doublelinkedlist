@@ -81,7 +81,31 @@ public:
 
         Node *current = START;
 
-       
+        while (current != NULL && current->noMhs != rollNo)
+            current = current->next;
+
+        if (current == NULL)
+        {
+            cout << "\nRecord not found" << endl;
+            return;
+        }
+        if (current == START)
+        {
+            START = current->next;
+
+            if (START != NULL)
+                START->prev = NULL;
+        }
+        else
+        {
+            if (current->next != NULL)
+                current->next->prev = current->prev;
+
+            current->prev->next = current->next;
+        }
+
+        delete current;
+        cout << "\nRecord with roll number " << rollNo << " deleted" << endl;
 
     }
 };
