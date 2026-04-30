@@ -106,6 +106,9 @@ public:
 
         delete current;
         cout << "\nRecord with roll number " << rollNo << " deleted" << endl;
-
+    }
+    void traverse()
+    {
+        
     }
 };
