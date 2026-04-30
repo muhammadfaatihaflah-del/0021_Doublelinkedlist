@@ -66,4 +66,9 @@ public:
         newnode->prev = current;
         current->next = newnode;
     }  
+
+    void deletenode()
+    {
+        
+    }
 };
