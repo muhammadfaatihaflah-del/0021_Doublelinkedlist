@@ -20,5 +20,8 @@ public:
         START = NULL;
     }
 
-    
+    void addnode()
+    {
+        
+    }  
 };
