@@ -124,4 +124,8 @@ public:
             current = current->next;
         }
     }
+    void revtraverse()
+    {
+        
+    }
 };
